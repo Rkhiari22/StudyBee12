@@ -30,7 +30,7 @@ class SignupActivity : AppCompatActivity() {
             if (email.isNotEmpty() && password.isNotEmpty() && name.isNotEmpty()) {
                 firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, SigninActivity::class.java)
+                        val intent = Intent(this, ProfileActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

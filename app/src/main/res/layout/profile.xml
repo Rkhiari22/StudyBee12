@@ -13,22 +13,14 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-140dp"
-        android:layout_marginTop="135dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="252dp"
         android:layout_marginBottom="500dp"
         android:contentDescription="green"
         android:src="@drawable/sign_in_green_circle" />
 
 
-    <ImageView
-        android:id="@+id/penedit"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="185dp"
-        android:src="@drawable/ic_pen" />
+
 
     <ImageView
         android:id="@+id/imageView9"
@@ -37,15 +29,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="-26dp"
-        android:layout_marginTop="-211dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-220dp"
         android:layout_marginEnd="-28dp"
         android:contentDescription="yellow"
         android:src="@drawable/sign_in_yellow_circle" />
 
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/savebutton"
         android:layout_width="295dp"
         android:layout_height="159dp"
         android:layout_alignParentStart="true"
@@ -75,25 +67,18 @@
         android:src="@drawable/sign_up_grey_circle" />
 
     <ImageView
-        android:id="@+id/whitecircle"
-        android:layout_width="185dp"
-        android:layout_height="129dp"
+        android:id="@+id/profilepic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="115dp"
-        android:src="@drawable/profilepic" />
-    <ImageView
-        android:id="@+id/arrow"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_arrow_left" />
+        android:scaleType="centerCrop"
+        android:background="@drawable/circular_background"
+        android:src="@drawable/camera" />
 
     <TextView
         android:id="@+id/profile"
@@ -102,11 +87,24 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="180dp"
+        android:layout_marginEnd="110dp"
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:text="Profile" />
+        android:text="Set up your profile" />
+
+    <TextView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="140dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Upload a photo" />
 
     <EditText
         android:id="@+id/name"
@@ -169,35 +167,10 @@
         android:textColor="@color/purple_500"/>
 
     <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fields"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:text="E-mail" />
-
-    <EditText
-        android:id="@+id/emailad"
-        android:layout_width="130dp"
-        android:layout_height="57dp"
-        android:layout_below="@+id/email"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="0dp"
-        android:textSize="15sp"
-        android:hint="Email Address"
-        android:textColor="@color/purple_500"/>
-
-    <TextView
         android:id="@+id/contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/emailad"
+        android:layout_below="@+id/fields"
         android:layout_alignParentStart="true"
         android:layout_marginStart="150dp"
         android:layout_marginTop="10dp"
@@ -219,35 +192,16 @@
         android:textColor="@color/purple_500"/>
 
     <TextView
-        android:id="@+id/edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/penedit"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="-5dp"
-        android:text="Edit" />
-
-    <TextView
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="95dp"
+        android:layout_marginBottom="25dp"
         android:textSize="22sp"
+        android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:text="Log out" />
-
-    <ImageView
-        android:id="@+id/logoutic"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="340dp"
-        android:layout_marginTop="701dp"
-        android:src="@drawable/logout" />
+        android:text="Save" />
 
 </RelativeLayout>
