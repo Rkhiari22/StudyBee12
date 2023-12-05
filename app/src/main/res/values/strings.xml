@@ -1,0 +1,22 @@
+<resources>
+
+    <!--> Loading page <-->
+    <string name="app_name">StudyBee</string>
+
+    <!--> Sign in page <-->
+    <string name="welcome">Welcome</string>
+    <string name="sign_in_box1">Your Email</string>
+    <string name="sign_in_box2">Password</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_up">Sign up</string>
+
+    <!--> Sign up page <-->
+    <string name="create_account">Create Account</string>
+    <string name="sign_up_box1">Name</string>
+    <string name="sign_up_box2">Your Email</string>
+    <string name="sign_up_box3">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_in">Sign in</string>
+
+</resources>

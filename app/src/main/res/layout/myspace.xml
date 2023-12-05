@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="620dp"
+        android:src="@drawable/entete" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="@font/futuraheavy"
+        android:text="My Space"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="111dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-630dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/search_bar"
+        android:ems="10"
+        android:hint="Search in My Space"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/light_grey" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/searchbar"
+        android:layout_alignBottom="@+id/searchbar"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/ic_search" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Recently opened files" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="My folders" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp" />
+
+</RelativeLayout>
