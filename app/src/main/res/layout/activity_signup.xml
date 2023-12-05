@@ -92,86 +92,30 @@
         android:layout_marginBottom="-74dp"
         android:src="@drawable/sign_up_white_circle" />
 
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_Password"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/sign_up"
-        android:textAppearance="@style/sign_options"
-        android:textSize="25sp" />
 
-    <ImageView
-        android:id="@+id/signup_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_Password"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="52dp"
-        android:background="@drawable/brown_circle"
-        android:src="@drawable/ic_arrow_right" />
-
-    <TextView
-        android:id="@+id/signUpToIn"
+    <Button
+        android:id="@+id/signUpToInButton"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="48dp"
-        android:clickable="true"
-        android:text="@string/sign_up_in"
-        android:textAppearance="@style/sign_options"
+        android:background="?attr/selectableItemBackground"
+        android:text="Sign in"
         android:textSize="23sp" />
-
-    <ImageView
-        android:id="@+id/signup_import"
-        android:layout_width="194dp"
-        android:layout_height="170dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="11dp"
-        android:clickable="true"
-        android:src="@drawable/sign_up_grey_circle"
-        android:contentDescription="Upload an Image" />
-
-    <ImageView
-        android:id="@+id/signup_return"
+    <Button
+        android:id="@+id/signupButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_Password"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/ic_arrow_left" />
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="44dp"
+        android:text="Sign up"
+        android:textSize="25sp"
+        android:background="?attr/selectableItemBackground"
+        />
 
-    <ImageView
-        android:id="@+id/signup_upload"
-        android:layout_width="49dp"
-        android:layout_height="45dp"
-        android:layout_alignStart="@+id/signup_import"
-        android:layout_alignTop="@+id/signup_import"
-        android:layout_alignEnd="@+id/signup_import"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="70dp"
-        android:src="@drawable/ic_upload" />
-
-    <TextView
-        android:id="@+id/uploadImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_upload"
-        android:layout_alignStart="@+id/signup_import"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="9dp"
-        android:text="Upload an image"
-        android:textColor="@color/darb_dark_brown"
-        android:textSize="16sp" />
 
 </RelativeLayout>

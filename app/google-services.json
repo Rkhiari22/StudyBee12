@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794754979117",
+    "project_id": "studybeeapp-c378b",
+    "storage_bucket": "studybeeapp-c378b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794754979117:android:1d8b3f30c7ef6ec9816fa4",
+        "android_client_info": {
+          "package_name": "tn.gsi.studybee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGz3D0ar_KxqHDmLrHChmze5MmmP9J3Gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,7 +4,7 @@
     <string name="app_name">StudyBee</string>
 
     <!--> Sign in page <-->
-    <string name="welcome">Welcome</string>
+    <string name="welcome">Welcome Back!</string>
     <string name="sign_in_box1">Your Email</string>
     <string name="sign_in_box2">Password</string>
     <string name="forget_password">Forgot Password</string>

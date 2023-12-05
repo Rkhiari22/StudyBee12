@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/entete"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="-10dp"
+        android:src="@drawable/entete_d"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="111dp"
+        android:layout_height="89dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/mondossier"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="25dp"
+        android:text="My files"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/futuraheavy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:background="@drawable/search_bar"
+        android:ems="10"
+        android:hint="Search "
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entete"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/searchbar"
+        app:layout_constraintBottom_toBottomOf="@+id/searchbar"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/ic_search" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_arrow_left" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

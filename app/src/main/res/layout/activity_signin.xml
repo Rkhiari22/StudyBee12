@@ -7,25 +7,27 @@
     android:orientation="horizontal" >
 
     <TextView
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="52dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
         android:layout_marginBottom="147dp"
         android:text="@string/sign_in"
+        android:clickable="true"
+        android:focusable="true"
         android:textAlignment="textStart"
         android:textAppearance="@style/sign_options"
-        android:textSize="25sp" />
+        android:textSize="35sp" />
 
     <EditText
         android:id="@+id/sign_inPassword"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/button1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="52dp"
@@ -38,7 +40,7 @@
         tools:paddingLeft="30dp" />
 
     <EditText
-        android:id="@+id/sign_inEmail"
+        android:id="@+id/signinEmail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_above="@+id/sign_inPassword"
@@ -54,44 +56,27 @@
         android:inputType="textEmailAddress"
         tools:paddingLeft="30dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-43dp"
-        android:text="TextView" />
+
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/signupRedirect"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="40dp"
         android:layout_marginBottom="20dp"
         android:clickable="true"
+        android:focusable="true"
         android:lineSpacingExtra="14sp"
         android:text="@string/sign_in_up"
         android:textAppearance="@style/sign_options"
         android:textSize="17dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
-        android:clickable="true"
-        android:text="@string/forget_password"
-        android:textAppearance="@style/sign_options"
-        android:textCursorDrawable="@color/cool_pink"
-        android:textSize="17sp" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/green_circle"
         android:layout_width="196dp"
         android:layout_height="178dp"
         android:layout_alignParentTop="true"
@@ -102,7 +87,7 @@
         android:contentDescription="green"/>
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/yellow_circle"
         android:layout_width="498dp"
         android:layout_height="586dp"
         android:layout_alignParentStart="true"
@@ -126,34 +111,21 @@
         android:contentDescription="grey" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/welcome"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="138dp"
-        android:layout_marginEnd="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
         android:fontFamily="@font/futuraheavy"
         android:text="@string/welcome"
         android:textAppearance="@style/title_font"
         android:textColor="#FEFEFE"
         android:textSize="42sp" />
 
-    <ImageView
-        android:id="@+id/signin_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="-100dp"
-        android:layout_marginTop="574dp"
-        android:layout_marginEnd="52dp"
-        android:layout_toEndOf="@+id/button"
-        android:background="@drawable/brown_circle"
-        android:clickable="true"
-        tools:src="@drawable/ic_arrow_right"
-        android:contentDescription="button" />
+
 
 </RelativeLayout>
